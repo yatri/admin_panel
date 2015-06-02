@@ -1,0 +1,191 @@
+/***********************
+// GENERAL
+***********************/
+a {
+	outline: none !important;
+	color: #34842D;
+}
+	a:hover {
+		color: #165E10;
+	}
+
+.text-green {
+    color: #3B8440;
+}
+
+.text-centered {
+	text-align: center;
+}
+
+#coming-soon {
+	margin-top: -50px;
+	background-color: #e9ebeb;
+}
+/***********************
+// TOP NAVIGATION
+***********************/
+.navbar {
+	border-bottom: 5px solid #7AAD4A;
+}
+.navbar-brand {
+    padding: 15px 0;
+}
+	.navbar-brand > img {
+	    max-height: 55px;
+	}
+.navbar-btn {
+    margin: 23.5px 0;
+    margin-left: 17px;
+}
+
+/***********************
+// HOME SLIDER
+***********************/
+.slide {
+	background-color: #7AAD4A;
+	color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.31);
+    font-size: 1.2em;
+    line-height: 1em;
+}
+	.slide .btn {
+		font-weight: bolder !important;
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.31) !important;
+	}
+	.slide .bg-img .android {
+		margin-top: 40px;
+	}
+
+/***********************
+// HOME NEWS UPDATES
+***********************/
+#home-news-updates {
+	margin-bottom: 20px;
+}
+	#home-news-updates h1 {
+		text-transform: none;
+		font-variant: small-caps;
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.31);
+	}
+	#home-news-updates .news {
+		margin-bottom: 10px;
+	}
+		#home-news-updates .news h3 {
+			font-size: 18px;
+			font-weight: 700;
+		}
+			#home-news-updates .news h3 > i {
+				margin-right: 10px;
+				color: #4E9B42;
+			}
+			#home-news-updates .news h3 > a {
+				color: #545151;
+				text-transform: capitalize;
+			}
+				#home-news-updates .news h3 > a:hover {
+					text-decoration: none;
+					color: #000;
+				}
+		#home-news-updates .news p {
+			margin: 10px 0;
+			color: #838383;
+		}
+		#home-news-updates .news span {
+			margin: 5px 0;
+			color: #BABABA;
+		}
+
+	#home-news-updates .img-updates {
+		max-height: 400px;
+	}
+
+
+/***********************
+// SPONSORS
+***********************/
+#sponsors {
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #f6f6f6;
+    border-color: #e9e9e9;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0;
+    margin-bottom: 40px;
+    padding: 5px 0;
+}
+	#sponsors h1 {
+		text-transform: none;
+		font-variant: small-caps;
+		text-shadow: 0 1px 3px rgba(0, 0, 0, 0.31);
+	}
+	#sponsors .sponsor {
+	  	margin-bottom: 10px;
+	}
+		#sponsors .sponsor > h4,
+		#sponsors .sponsor > h4 a {
+			color: #000;
+		  	font-weight: 600;
+		  	text-transform: none;
+			font-variant: small-caps;
+			text-shadow: 0 1px 3px rgba(0, 0, 0, 0.31);
+		}
+			#sponsors .sponsor > h4 span {
+			  	display: block;
+			  	margin: 7px auto;
+			}
+	#sponsors .sponsor-logo {
+	  	border: 1px solid #e9e9e9;
+	  	margin-bottom: 5px;
+	  	padding: 10px;
+	}
+
+/***********************
+// FOOTER
+***********************/
+footer h1 {
+	text-transform: none;
+	font-variant: small-caps;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.31);
+}
+footer .links li a:hover {
+    color: #165E10;
+}
+footer .footer-brand {
+	max-height: 60px;
+	margin: 0 auto 10px;
+}
+
+/***********************
+// SECOND PAGE TOPIC
+***********************/
+.topic h1 {
+	text-transform: none;
+	font-variant: small-caps;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	color: #7AAD4A;
+	font-weight: bolder;
+}
+
+
+/***********************
+// RESPONSIVENESS
+***********************/
+@media (max-width: 768px) {
+	.container {
+		margin: 15px !important;
+	}
+
+	#home-news-updates .img-updates {
+		max-height: 100%;
+		margin-top: 20px; 
+	}
+	#sponsors .sponsor-logo img {
+		margin: 0 auto;
+		max-height: 100px;
+	}
+}

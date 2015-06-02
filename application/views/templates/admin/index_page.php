@@ -1,20 +1,51 @@
-<!DOCTYPE html>
-<html>
+<?php echo doctype('html5') ?>
+<html lang="en">
 <head>
 
     <!--
-        SITES GENERAL INFO
+        Basic Site's Information
     -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php echo meta('X-UA-Compatible', 'IE=edge', 'equiv'); ?>
+    <?php echo meta('viewport', 'width=device-width, initial-scale=1.0'); ?>
+    <title>Admin Panel</title>
+    
+    <?php
+    $meta = array(
+            array('name' => 'robots', 'content' => 'noindex, nofollow'),
+            array('name' => 'keywords', 'content' => ''),
+            array('name' => 'description', 'content' => ''),
+            array('name' => 'application-name', 'content' => 'admin_panel'),
+            array('name' => 'author', 'content' => 'Puncoz Nepal [http://www.puncoz.com]'),
+            array('name' => 'base_url', 'content' => base_url())
+        );
 
-    <title>INSPINIA | Empty Page</title>
+    echo meta($meta); 
+    ?>
 
+    <!-- 
+        FAVICON
+    -->
+    <?php echo link_tag('assets/admin/custom/img/favicons/favicon.png', 'shortcut icon', 'image/png') ?>
+
+    <!-- 
+        Style Sheets
+    --> 
+    <?php echo link_tag('assets/vendor/bootstrap/css/bootstrap.min.css') ?>
+    <?php echo link_tag('assets/vendor/font-awesome/css/font-awesome.min.css') ?>
+    <?php echo link_tag('assets/custom/css/style.css') ?>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="<?php echo base_url() ?>assets/vendor/html5shiv.min.js"></script>
+    <script src="<?php echo base_url() ?>assets/vendor/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
