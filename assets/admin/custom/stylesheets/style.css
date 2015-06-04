@@ -1,0 +1,61 @@
+/*****************************************
+	G E N E R A L
+*****************************************/
+a {
+	outline: none !important;
+}
+
+.help {
+	cursor: help;	
+}
+
+/*****************************************
+	L O G I N   P A G E
+*****************************************/
+.loginscreen {
+	margin-bottom: -25% !important;
+}
+.login-box {
+	margin-top: 50%;
+	border: 1px solid #000;
+	padding: 10px !important;
+}
+.msg {
+	text-align: left;
+	font-size: .9em;
+}
+.msg-error {
+	color: #C14747;
+}
+
+/*****************************************
+	D A S H B O A R D
+*****************************************/
+#page-wrapper {
+	min-height: auto;
+}
+.navbar-static-side {
+	padding-bottom: 40px;
+}
+.footer {
+	position: fixed;
+	z-index: 9999;
+}
+.profile-element {
+	text-align: center !important;
+	display: block;
+	position: relative;
+	vertical-align: middle;
+}
+.nav-prof-pic {
+	height: 105px;
+	border: 2px double #506A7F;
+}
+
+.wrapper-content {
+    min-height: 700px !important;
+}
+
+.theme-config {
+    top: 155px;
+}

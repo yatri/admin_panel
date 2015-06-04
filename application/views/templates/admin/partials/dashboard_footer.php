@@ -1,9 +1,9 @@
-
 <div class="footer">
-                <div class="pull-right">
-                    10GB of <strong>250GB</strong> Free.
-                </div>
-                <div>
-                    <strong>Copyright</strong> Example Company &copy; 2014-2015
-                </div>
-            </div>
+    <div class="pull-right">
+        Theme: <strong><a href="http://webapplayers.com/inspinia_admin-v2.1/" target="_blank">Inspinia</a></strong>
+    </div>
+    <div>
+    	&copy; <?php echo mdate("%Y", time()) ?> |
+    	<strong>Admin Panel :: Company Name</strong>
+    </div>
+</div>

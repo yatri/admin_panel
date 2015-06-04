@@ -1,25 +1,20 @@
-<nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+    
     <div class="navbar-header">
-        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-        <form role="search" class="navbar-form-custom" action="search_results.html">
-            <div class="form-group">
-                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
-            </div>
-        </form>
+        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="javascript:;"><i class="fa fa-bars"></i></a>
+        <h2 class="nav navbar-text welcome-message">Welcome to the Admin Panel.</h2>
     </div>
+
     <ul class="nav navbar-top-links navbar-right">
-        <li>
-            <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
-        </li>
         <li class="dropdown">
-            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="javascript:;">
                 <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
             </a>
             <ul class="dropdown-menu dropdown-messages">
                 <li>
                     <div class="dropdown-messages-box">
                         <a href="profile.html" class="pull-left">
-                            <img alt="image" class="img-circle" src="img/a7.jpg">
+                            <img alt="image" class="img-circle" src="assets/uploads/img/a7.jpg">
                         </a>
                         <div class="media-body">
                             <small class="pull-right">46h ago</small>
@@ -32,7 +27,7 @@
                 <li>
                     <div class="dropdown-messages-box">
                         <a href="profile.html" class="pull-left">
-                            <img alt="image" class="img-circle" src="img/a4.jpg">
+                            <img alt="image" class="img-circle" src="assets/uploads/img/a4.jpg">
                         </a>
                         <div class="media-body ">
                             <small class="pull-right text-navy">5h ago</small>
@@ -45,7 +40,7 @@
                 <li>
                     <div class="dropdown-messages-box">
                         <a href="profile.html" class="pull-left">
-                            <img alt="image" class="img-circle" src="img/profile.jpg">
+                            <img alt="image" class="img-circle" src="assets/uploads/img/profile.jpg">
                         </a>
                         <div class="media-body ">
                             <small class="pull-right">23h ago</small>
@@ -64,8 +59,9 @@
                 </li>
             </ul>
         </li>
+
         <li class="dropdown">
-            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="javascript:;">
                 <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
             </a>
             <ul class="dropdown-menu dropdown-alerts">
@@ -109,10 +105,17 @@
 
 
         <li>
-            <a href="login.html">
+            <a href="">
+                <i class="fa fa-refresh"></i> Refresh
+            </a>
+        </li>
+
+        <li>
+            <a href="<?php echo site_url('logout') ?>">
                 <i class="fa fa-sign-out"></i> Log out
             </a>
         </li>
+
     </ul>
 
 </nav>

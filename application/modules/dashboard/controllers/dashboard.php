@@ -1,4 +1,3 @@
-
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
@@ -17,19 +16,23 @@ class Dashboard extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 
-		// load shorten model
-		$this->load->model('Dashboard_model');
+		// load dashboard model
+		$this->load->model('dashboard_model');
 	}
 
 	public function index() {
-		// $this->data['page_info'] = array(
-		// 								'title' => 'Nepal\'s First URL shortener',
-		// 								'meta_keywords' => 'url shortner',
-		// 								'meta_description' => 'Nepal\'s One and Only Url Shortner.'
-		// 							);
+		self::$viewData['page_info'] = array(
+										'title' => 'Dashboard || Admin Panel',
+										'meta_keywords' => 'url shortner',
+										'meta_description' => 'Nepal\'s One and Only Url Shortner.'
+									);
 
-		// $this->data['page_content'] = $this->load->view('home_page', $this->data, TRUE);
+		self::$viewData['main_content_page'] = $this->load->view('dashboard_page', self::$viewData, TRUE);
 		$this->load->view('templates/admin/index_dashbaord',self::$viewData);
+	}
+
+	public function getSkinConfig(){
+		$this->load->view('templates/admin/partials/dashboard_skin_config');
 	}
 
 } // end of Dashboard Class Controller
