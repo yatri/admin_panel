@@ -60,7 +60,7 @@ $autoload['packages'] = array(APPPATH . 'third_party/DevelBar');
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('database', 'session');
+$autoload['libraries'] = array('session', 'auth/ion_auth', 'form_validation');
 
 
 /*
@@ -88,7 +88,7 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url','html', 'date');
+$autoload['helper'] = array('url', 'html', 'date', 'form');
 
 
 /*

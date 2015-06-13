@@ -3,7 +3,6 @@
 -->
 <meta charset="utf-8">
 <?php echo meta('viewport', 'width=device-width, initial-scale=1.0'); ?>
-<base href="<?php echo base_url() ?>">
 <title><?php echo $page_info['title'] ?></title>
 <?php
 $metaData = array(
@@ -38,7 +37,7 @@ echo meta($metaData);
 
 <!-- 
     Style Sheets
---> 
+-->
 <?php
     echo link_tag('assets/vendor/bootstrap/css/bootstrap.min.css');
     echo link_tag('assets/vendor/font-awesome/css/font-awesome.min.css');

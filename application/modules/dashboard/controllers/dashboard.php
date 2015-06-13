@@ -31,6 +31,17 @@ class Dashboard extends CI_Controller {
 		$this->load->view('templates/admin/index_dashbaord',self::$viewData);
 	}
 
+	public function login() {
+		self::$viewData['page_info'] = array(
+										'title' => 'Dashboard || Admin Panel',
+										'meta_keywords' => 'url shortner',
+										'meta_description' => 'Nepal\'s One and Only Url Shortner.'
+									);
+
+		//self::$viewData['main_content_page'] = $this->load->view('login_page', self::$viewData, TRUE);
+		$this->load->view('templates/admin/index_login',self::$viewData);
+	}
+
 	public function getSkinConfig(){
 		$this->load->view('templates/admin/partials/dashboard_skin_config');
 	}

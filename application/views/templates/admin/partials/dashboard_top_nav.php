@@ -14,7 +14,7 @@
                 <li>
                     <div class="dropdown-messages-box">
                         <a href="profile.html" class="pull-left">
-                            <img alt="image" class="img-circle" src="assets/uploads/img/a7.jpg">
+                            <img alt="image" class="img-circle" src="<?php echo base_url() ?>assets/uploads/img/a7.jpg">
                         </a>
                         <div class="media-body">
                             <small class="pull-right">46h ago</small>
@@ -27,7 +27,7 @@
                 <li>
                     <div class="dropdown-messages-box">
                         <a href="profile.html" class="pull-left">
-                            <img alt="image" class="img-circle" src="assets/uploads/img/a4.jpg">
+                            <img alt="image" class="img-circle" src="<?php echo base_url() ?>assets/uploads/img/a4.jpg">
                         </a>
                         <div class="media-body ">
                             <small class="pull-right text-navy">5h ago</small>
@@ -40,7 +40,7 @@
                 <li>
                     <div class="dropdown-messages-box">
                         <a href="profile.html" class="pull-left">
-                            <img alt="image" class="img-circle" src="assets/uploads/img/profile.jpg">
+                            <img alt="image" class="img-circle" src="<?php echo base_url() ?>assets/uploads/img/profile.jpg">
                         </a>
                         <div class="media-body ">
                             <small class="pull-right">23h ago</small>
@@ -105,7 +105,7 @@
 
 
         <li>
-            <a href="">
+            <a href="<?php // echo site_url_segment() ?>#top">
                 <i class="fa fa-refresh"></i> Refresh
             </a>
         </li>

@@ -7,7 +7,7 @@
             <li class="nav-header">
                 <div class="dropdown profile-element">
                     <span>
-                        <img alt="image" class="img-circle nav-prof-pic" src="assets/uploads/profile/puncoz.jpg" />
+                        <img alt="image" class="img-circle nav-prof-pic" src="<?php echo base_url() ?>assets/uploads/profile/puncoz.jpg" />
                     </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">
@@ -18,11 +18,11 @@
                         </span>
                     </a>
                     <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                        <li><a href="profile.html">Profile</a></li>
-                        <li><a href="contacts.html">Contacts</a></li>
-                        <li><a href="mailbox.html">Mailbox</a></li>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Mailbox</a></li>
                         <li class="divider"></li>
-                        <li><a href="login.html">Logout</a></li>
+                        <li><a href="<?php echo site_url('logout') ?>">Logout</a></li>
                     </ul>
                 </div>
                 <div class="logo-element">
